@@ -3,7 +3,7 @@
 import * as React from "react";
 import { ISubscriptionTierEntity } from "../../interfaces/subscription";
 import { Button } from "../../common/components/form";
-import { Stripe } from "../stripe/stripeCharge";
+//Proprietary Information - Line Removed
 import { StripeExistingPayment } from "../stripe/stripeExistingPayment";
 
 
