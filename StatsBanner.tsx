@@ -1,8 +1,8 @@
 ﻿
 import * as React from "react";
 import { IStatsEntity } from "../../interfaces/Stats/IStatsEntity";
-import { UserApi } from "../../api/Stats/index";
-import { } from "../../public/image"
+//Proprietary Information - Line Removed
+//Proprietary Information - Line Removed
 
 interface IStatsPageState {
     stats: IStatsEntity;
@@ -27,7 +27,7 @@ export class StatsPage extends React.Component<{}, IStatsPageState>{
     }
 
     public stats() {
-        UserApi.statsData()
+        //Proprietary Information - Line Removed
             .then((response) => {
                 //console.log(response)
                 this.setState({
