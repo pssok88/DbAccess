@@ -3,7 +3,7 @@
 import * as React from "react";
 import { AthleteFanList } from "../blogs/AthleteFanList";
 import { IUserFollowingRel, IUserFollowingRelSort } from "../../interfaces/blogs";
-import { AthletesApi } from "../../api/Athletes";
+//Proprietary Information - Line Removed
 import { Button, Input, DropDownList } from "../../common/components/form";
 
 interface IUserFollowingRelState {
@@ -57,7 +57,7 @@ export class UserFollowingPage extends React.Component<{}, IUserFollowingRelStat
 
 
     private getAllFans() {
-        AthletesApi.getAllFanInfo(this.state.data)
+        //Proprietary Information - Line Removed
             .then((response) => {
                 //console.log(response)
                 if (response.items.length > 0) {
