@@ -2,7 +2,7 @@
 import * as ReactDOM from "react-dom";
 import { Bar } from "react-chartjs-2";
 import { IAthleteFanChart } from "../../interfaces/Charts/IAthleteFanChart";
-//Proprietary information - Line Removed
+import { UserApi } from "../../api/Stats/index";
 import { DropDownList, Input } from "../../common/components/form";
 import { ChartDropDownList } from "../../common/components/subscriptions/chartDropDownlist";
 import { ChartDateInput } from "../../common/components/subscriptions/ChartDateInput";
@@ -81,7 +81,7 @@ export class AthleteFanChart extends React.Component<{}, IAthleteFanChartState>{
     }
     
     public chartData() {
-        //Proprietary information - Line Removed
+        UserApi.chartData(this.state.postData)
             .then((response) => {
                 let timeFrame = [];
                 let totalFans = [];
