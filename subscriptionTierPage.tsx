@@ -3,15 +3,14 @@
 import * as React from "react";
 import { SubscriptionTierBlock } from "../../components/subscription";
 import { ISubscriptionTierEntity } from "../../interfaces/subscription";
-import { subscriptionsApi } from "../../api/Subscriptions";
+//Proprietary Information - Line Removed
 import { Button } from "../../common/components/form/button";
-import { Stripe } from "../stripe/stripeCharge";
-//import { IStripeCheckout } from "../stripe/stripeCharge";
+//Proprietary Information - Line Removed
+//Proprietary Information - Line Removed
 import { IStripeCharge } from "../../interfaces/stripe/IStripeCharge";
 
 interface ISubscriptionTierState {
     subscriptionTierEntity: ISubscriptionTierEntity,
-    //subscriptionDiscountFormEntity: ISubscriptionDiscountFormEntity,
     tierInfo: ISubscriptionTierEntity[]
 }
 
@@ -36,7 +35,7 @@ export class SubscriptionTierPage extends React.Component<any, ISubscriptionTier
         if (this.props.params.id) {
             console.log("id: ", this.props.params.id);
         }
-        subscriptionsApi.getProspectSubscriptions(this.props.params.id)
+       //Proprietary Information - Line Removed
             .then((response) => {
                 const tiers = response.items;
                 console.log(tiers + "you have no subscriptions")
@@ -77,7 +76,7 @@ export class SubscriptionTierPage extends React.Component<any, ISubscriptionTier
             ["invoice"]: token.created
         }
 
-        subscriptionsApi.subscriptionTierCharge(data)
+       //Proprietary Information - Line Removed
             .then((response) => {
                 console.log(response);
                 //this is to reset after charge is complete
