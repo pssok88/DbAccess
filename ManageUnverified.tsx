@@ -1,5 +1,5 @@
 ﻿import * as React from "react";
-import { AthletesApi } from "../../api/Athletes";
+//Proprietary Information - Line Removed
 import { IAthleteUnverified } from "../../interfaces/manageusers/IAthleteUnverified";
 import { AthleteUnverifiedList } from "./ManageUnverifiedList";
 import { IAthleteUnverifiedGetEntity } from "../../interfaces/athletes/IAthleteUnverifiedGetEntity";
@@ -90,7 +90,7 @@ export class ManageUnverified extends React.Component<{}, IManageUnverifiedState
     }
     //------------------------------------
     public getList() {
-        AthletesApi.GetUnverified(this.state.sortPageEntity)
+        //Proprietary Information - Line Removed
             .then((response) => {
                 if (response.items.length > 0) {
                     this.setState({
@@ -115,7 +115,7 @@ export class ManageUnverified extends React.Component<{}, IManageUnverifiedState
     }
 
     public updateValidation(data) {
-        AthletesApi.PutVerification(data)
+        //Proprietary Information - Line Removed
             .then((Response) => {
                 this.getList();
             })
