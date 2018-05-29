@@ -24,11 +24,10 @@ export class Stripe extends React.Component<IStripeCheckout> {
     render() {
 
         return (
-            // ...
-			<StripeCheckout
-				amount={this.props.amount}
+		<StripeCheckout
+		amount={this.props.amount}
                 token={this.onToken}
-                stripeKey="pk_test_GSm3k1tPHdyzGaiy3TtMzpVl"
+                stripeKey="//Proprietary Information - Line Removed"
             />
         )
     }
