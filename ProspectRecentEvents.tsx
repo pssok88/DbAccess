@@ -1,6 +1,6 @@
 ﻿import * as React from "react";
 import { IProspectRecentEvents } from "../../interfaces/Events/IProspectRecentEvents";
-import { EventApi } from "../../api/Events/index";
+//Proprietary Information - Line Removed
 import * as Moment from "moment";
 import { browserHistory } from "react-router";
 import loadjs from "loadjs";
@@ -52,7 +52,7 @@ export class ProspectRecentEvents extends React.Component<{}, IProspectReactEven
     }
 
     public getRecentEvents() {
-        EventApi.getRecentEvents()
+        //Proprietary Information - Line Removed
             .then((response) => {
                 //console.log(response)
                 //let data = response.items;
